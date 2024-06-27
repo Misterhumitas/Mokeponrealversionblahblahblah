@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
+
+body {
+    font-family: "Gochi Hand", cursive;
+    background-color: #005C78;
+  }
+
+input {
+    display: none;
+}
+input:checked + .contenedor-mascota {
+    background-color:  #1d82a0;
+    border-radius: 35%;
+
+}
+
+#mensajes {
+    display: none;
+}
+#resultados {
+    display: none;
+}
+  
+.titulo {
+    color: orange;
+    font-size: 70px;
+
+}
+.subtitulo {
+    display: flex;
+    font-size: 50px;
+   
+}
+
+.contenedor-mascota {
+    display: inline-block;
+    position: relative;
+    margin-right: 20px; 
+    align-content: center;
+    color: black;
+    width: 300px;
+    height: 300px;
+    background-color:  #01465b;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 2px solid;
+    font-size: 25px;
+    display: flex;
+    border-radius: 35%;
+}
+.contenedor-ataques {
+    display: inline-block;
+    position: relative;
+    margin-right: 20px; 
+    align-content: center;
+    color: black;
+    width: 300px;
+    height: 300px;
+    background-color:  #01465b;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 2px solid;
+    font-size: 25px;
+    display: flex;
+    border-radius: 35%;
+
+}
+
+.nombre {
+     position: absolute;
+            top: -25px; 
+            left: 47%;
+            transform: translateX(-50%);
+    text-align: center;
+    background-color: orange;
+    border-radius: 5px;
+    color: black;
+    width: 80px;
+    height: 40px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 2px solid;
+    font-size: 25px;
+    border-radius: 35%;
+    
+}
+
+.mascota img {
+    
+    max-width: 100%;
+    max-height: 100%;
+   
+}
+.tarjetas {
+    display: flex;
+    gap: 10px;
+}
+.contenedor-mascota img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+/*.mover-mascota-fu {
+    position: relative; /* Permite mover la imagen usando top 
+    top: -60px; /* Ajusta este valor para mover la imagen ligeramente hacia arriba 
+    max-width: 100%;  Asegura que la imagen no sobresalga del contenedor 
+    height: auto;  Mantiene la proporción de la imagen 
+}*/
+
+#agua {
+    color: black;
+    width: 300px;
+    height: 300px;
+    background-color: darkcyan;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 2px solid;
+    font-size: 25px;
+    display: flex;
+    border-radius: 35%;
+
+}
+/*.mover-mascota-ag {
+    position: relative; 
+    top: -60px; 
+    max-width: 100%;
+    height: auto;
+}*/
+#aire {
+    color: black;
+    width: 300px;
+    height: 300px;
+    background-color: darkgrey;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 2px solid;
+    font-size: 25px;
+    display: flex;
+    border-radius: 35%;
+
+}
+/*.mover-mascota-ai {
+    position: relative; 
+    top: -60px; 
+    max-width: 100%;
+    height: auto;
+}*/
+#tierra {
+    color: black;
+    width: 300px;
+    height: 300px;
+    background-color: saddlebrown;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 2px solid;
+    font-size: 25px;
+    display: flex;
+    border-radius: 35%;
+
+}
+/*.mover-mascota-ti {
+    width: 100%;
+    height: 100%;
+    display: flex;
+} */
+
+   
+#ataque-agua {
+    color: black;
+    background-color: darkcyan;
+    font-family: "Gochi Hand", cursive;
+
+}
+#ataque-aire {
+    color: black;
+    background-color: darkgrey;
+    font-family: "Gochi Hand", cursive;
+
+}
+#ataque-tierra {
+    color: black;
+    background-color: saddlebrown;
+    font-family: "Gochi Hand", cursive;
+
+}
+label {
+    color: darkgreen;
+    width: 155px;
+    height: 45px;
+
+}
+input {
+    color: darkgreen;
+    width: 20px;
+    height: 20px;
+
+}
+button {
+    color: black;
+    width: 90px;
+    height: 50px;
+    background-color: orange
+    
+}
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Gochi Hand", cursive;
+}
+#mensajes {
+    color: black;
+    width: 300px;
+    height: 300px;
+    background-color: #01475c;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 2px solid;
+    font-size: 25px;
+    display: flex;
+    
+    
+}
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+}
+
+@media (max-width: 360px) {
+    .contenedor-mascota {
+        flex-direction: column;
+    }
+}
